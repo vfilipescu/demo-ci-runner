@@ -2,6 +2,7 @@ build:
   stage: build
   image: openjdk:8-jdk
   script: 
+  - mkdir bin
   - javac -d bin src/javaTest/JavaTest.java
   - jar cvmf META-INF/MANIFEST.MF javaTest.jar  bin/javaTest/JavaTest.class
   artifacts:
