@@ -7,4 +7,4 @@ build:
   - jar cvmf META-INF/MANIFEST.MF javaTest.jar  javaTest/JavaTest.class
   artifacts:
     paths:
-      javaTest.jar
+      - javaTest.jar
