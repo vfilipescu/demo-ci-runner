@@ -3,7 +3,8 @@ build:
   image: openjdk:8-jdk
   script: 
   - mkdir bin
-  - javac -d bin src/javaTest/JavaTest.java
-  - jar cvmf META-INF/MANIFEST.MF javaTest.jar  bin/javaTest/JavaTest.class
+  - javac -d ./ src/javaTest/JavaTest.java
+  - jar cvmf META-INF/MANIFEST.MF javaTest.jar  javaTest/JavaTest.class
   artifacts:
-    untracked: true
+    paths:
+      javaTest.jar
