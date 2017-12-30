@@ -19,5 +19,5 @@ build:
   artifacts:
     paths:
       - javaTest.jar
-      - build/lib/*.jar
+      - build/libs/*.jar
     expire_in: 1 week
