@@ -15,7 +15,9 @@ build:
   - mkdir bin
   - javac -d ./ src/javaTest/JavaTest.java
   - jar cvmf META-INF/MANIFEST.MF javaTest.jar  javaTest/JavaTest.class
-  - ./gradlew build
+  - gradle build
   artifacts:
     paths:
       - javaTest.jar
+      - build/lib/*.jar
+    expire_in: 1 week
