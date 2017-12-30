@@ -1,0 +1,19 @@
+plugins {
+	id 'base'
+}
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+}
+}
+
+description = 'Java Test project'
+version = '0.3.0'
+
+
+mainClassName = 'javaTest.JavaTest'

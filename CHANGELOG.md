@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 0.3.0 - 2017-12-30 - gradle build
+### Added
+- gradle build
+
 ## 0.2.0 - 2017-12-29 - create jar file
 ### Added
 - jar file creation
