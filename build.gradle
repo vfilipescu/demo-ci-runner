@@ -3,17 +3,26 @@ plugins {
 }
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'eclipse'
 
 sourceSets {
     main {
         java {
             srcDirs = ['src']
         }
+	}
 }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "joda-time:joda-time:+"
 }
 
 description = 'Java Test project'
-version = '0.3.0'
+version = '0.4.0'
 
 
 mainClassName = 'javaTest.JavaTest'
