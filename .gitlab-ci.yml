@@ -12,13 +12,9 @@ before_script:
 build:
   stage: build
   script: 
-  - mkdir bin
-  - javac -d ./ src/javaTest/JavaTest.java
-  - jar cvmf META-INF/MANIFEST.MF javaTest.jar  javaTest/JavaTest.class
   - gradle build
   artifacts:
     paths:
-      - javaTest.jar
       - build/distributions
       - build/libs/*.jar
     expire_in: 1 week
